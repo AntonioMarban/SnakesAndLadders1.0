@@ -32,8 +32,7 @@ void MyGame::start(){
 
     int turnNumber = 1;
     int player = 1;
-    Player p1(1);
-    Player p2(2);
+    Player p1, p2(p1);
     Dice dado;
     bool end = false;
 
