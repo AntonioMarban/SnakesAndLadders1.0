@@ -1,4 +1,6 @@
 #include <iostream>
+#include "Player.h"
+#include "Dice.h"
 using namespace std;
 
 class Turn{
@@ -67,6 +69,4 @@ char Turn::getBoard(){
     return board;
 }
 
-void Turn::continu(){
-   cout<< numTurn << numPlayer << inPosition << numDice<< fiPosition << endl; 
-}
+void Turn::continu(){}
