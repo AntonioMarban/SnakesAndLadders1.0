@@ -1,5 +1,5 @@
 C++ program for creating & simulating a Snake & Ladder Game
-Code by: Antonio Marban Regalado and Carol Jatziry Rendon Guerrero
+Coded by: Antonio Marban Regalado and Carol Jatziry Rendon Guerrero
 
 Instructions and rules:
 1. You can place the Snakes and Ladders board on snakes.cpp line 26. 
