@@ -1,4 +1,4 @@
-C program for creating & simulating a Snake & Ladder Game
+C++ program for creating & simulating a Snake & Ladder Game
 Code by: Antonio Marban Regalado and Carol Jatziry Rendon Guerrero
 
 Instructions and rules:
