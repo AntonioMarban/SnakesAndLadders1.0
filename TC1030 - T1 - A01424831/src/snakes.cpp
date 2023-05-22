@@ -1,8 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "classes/Dice.h"
-#include "classes/Player.h"
+#include "Dice.h"
+#include "Player.h"
 using namespace std;
 
 class MyGame {
