@@ -50,6 +50,7 @@ void MyGame::start(){
         }
 
         if (s1=='C'){
+
             dado.roll();
 
             if (player == 1) {
@@ -58,13 +59,19 @@ void MyGame::start(){
                     p1.setPosition(30);
                     end = true;
                 }
-                else if (vtr[p1.getPosition()+1] == 'L') {
+                else if (vtr[p1.getPosition() - 1] == 'L') {
                     p1.setPosition(p1.getPosition() + 3);
+                    cout << turnNumber << " " << player << " " << p1.getPosition() - dado.getNumber() - 3 << " " << dado.getNumber() << " " << vtr[p1.getPosition() - 4] << " " << p1.getPosition() << endl;
                 }
-                else if (vtr[p1.getPosition()+1] == 'S') {
+                else if (vtr[p1.getPosition() - 1] == 'S') {
+
                     p1.setPosition(p1.getPosition() - 3);
+
+                    cout << turnNumber << " " << player << " " << p1.getPosition() - dado.getNumber() + 3 << " " << dado.getNumber() << " " << vtr[p1.getPosition() + 2] << " " << p1.getPosition() << endl;
                 }
-                cout << turnNumber << " " << player << " " << p1.getPosition() - dado.getNumber() << " " << dado.getNumber() << " " << vtr[p1.getPosition() + 1] << " " << p1.getPosition() << endl;
+                else {
+                    cout << turnNumber << " " << player << " " << p1.getPosition() - dado.getNumber() << " " << dado.getNumber() << " " << vtr[p1.getPosition() - 1] << " " << p1.getPosition() << endl;
+                }
                 if (end) {
                     cout << "Player 1 is the winner!!!" << endl;
                 }
@@ -78,14 +85,17 @@ void MyGame::start(){
                     p2.setPosition(30);
                     end = true;
                 }
-                else if (vtr[p2.getPosition()+1] == 'L') {
+                else if (vtr[p2.getPosition() - 1] == 'L') {
                     p2.setPosition(p2.getPosition() + 3);
+                    cout << turnNumber << " " << player << " " << p2.getPosition() - dado.getNumber() - 3 << " " << dado.getNumber() << " " << vtr[p2.getPosition() - 4] << " " << p2.getPosition() << endl;  
                 }
-                else if (vtr[p2.getPosition()+1] == 'S') {
+                else if (vtr[p2.getPosition() - 1] == 'S') {
                     p2.setPosition(p2.getPosition() - 3);
+                    cout << turnNumber << " " << player << " " << p2.getPosition() - dado.getNumber() + 3 << " " << dado.getNumber() << " " << vtr[p2.getPosition() + 2] << " " << p2.getPosition() << endl;  
                 }
-                cout << turnNumber << " " << player << " " << p2.getPosition() - dado.getNumber() << " " << dado.getNumber() << " " << vtr[p2.getPosition() + 1] << " " << p2.getPosition() << endl;
-
+                else {
+                    cout << turnNumber << " " << player << " " << p2.getPosition() - dado.getNumber() << " " << dado.getNumber() << " " << vtr[p2.getPosition() - 1] << " " << p2.getPosition() << endl;    
+                }
                 if (end) {
                     cout << "Player 2 is the winner!!!" << endl;
                 }
